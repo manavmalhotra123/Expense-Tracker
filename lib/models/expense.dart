@@ -53,7 +53,7 @@ class ExpenseBucket {
   ExpenseBucket.forcategory(
     List<Expense> allexp,
     this.category
-  );
+  ) : expenses = allexp.where((expense) => expense.category == (category)).toList();
 
   // total expense function
   double get totalExpenses {
