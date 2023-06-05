@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my4/expense_list.dart';
 import 'package:my4/models/expense.dart';
 import 'package:my4/new_expense.dart';
+import 'package:my4/chart.dart';
 
 // stateful widget
 class Expenses extends StatefulWidget {
@@ -95,7 +96,7 @@ class _ExpensesState extends State<Expenses> {
       ),
       body: Column(
         children: [
-          const Text('The Chart'),
+          Chart(expenses: _registeredExpenes),
           mainContent
         ],
       ),
